@@ -1,7 +1,7 @@
 package io.github.mcengine.dlc.artificialintelligence.example;
 
-import io.github.mcengine.api.artificialintelligence.dlc.IMCEngineArtificialIntelligenceDLC;
-import io.github.mcengine.api.artificialintelligence.dlc.MCEngineArtificialIntelligenceDLCLogger;
+import io.github.mcengine.api.mcengine.dlc.IMCEngineDLC;
+import io.github.mcengine.api.mcengine.dlc.MCEngineDLCLogger;
 import io.github.mcengine.dlc.artificialintelligence.example.command.DLCCommand;
 import io.github.mcengine.dlc.artificialintelligence.example.listener.DLCListener;
 import io.github.mcengine.dlc.artificialintelligence.example.tabcompleter.DLCTabCompleter;
@@ -18,10 +18,10 @@ import java.util.List;
 /**
  * Example DLC for MCEngineArtificialIntelligence.
  */
-public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
+public class ExampleDLC implements IMCEngineDLC {
     @Override
     public void onLoad(Plugin plugin) {
-        MCEngineArtificialIntelligenceDLCLogger logger = new MCEngineArtificialIntelligenceDLCLogger(plugin, "Example-DLC");
+        MCEngineDLCLogger logger = new MCEngineDLCLogger(plugin, "Example-DLC");
 
         try {
             // Register listener
