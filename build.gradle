@@ -37,13 +37,6 @@ repositories {
             password = project.user_github_token
         }
     }
-    maven {
-        url = uri('https://maven.pkg.github.com/MCEngine/mcengine-api')
-        credentials {
-            username = project.user_git_name
-            password = project.user_github_token
-        }
-    }
 }
 
 subprojects {
