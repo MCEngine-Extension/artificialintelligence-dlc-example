@@ -38,7 +38,7 @@ repositories {
         }
     }
     maven {
-        url = uri('https://maven.pkg.github.com/MCEngine/artificialintelligence')
+        url = uri('https://maven.pkg.github.com/MCEngine/mcengine-api')
         credentials {
             username = project.git_user_name ?: 'null'
             password = project.git_user_token ?: 'null'
