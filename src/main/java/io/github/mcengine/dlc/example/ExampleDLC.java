@@ -1,5 +1,6 @@
 package io.github.mcengine.dlc.example;
 
+import io.github.mcengine.api.mcengine.MCEngineApi;
 import io.github.mcengine.api.mcengine.dlc.IMCEngineDLC;
 import io.github.mcengine.api.mcengine.dlc.MCEngineDLCLogger;
 import io.github.mcengine.dlc.example.command.DLCCommand;
@@ -59,6 +60,6 @@ public class ExampleDLC implements IMCEngineDLC {
             logger.warning("Failed to initialize Example-DLC: " + e.getMessage());
             e.printStackTrace();
         }
-        MCEngineApi.checkUpdate(plugin, "github", "MCEngine-DLC", "example", getConfig().getString("github.token", "null"));
+        MCEngineApi.checkUpdate(plugin, "github", "MCEngine-DLC", "example", plugin.getConfig().getString("github.token", "null"));
     }
 }
