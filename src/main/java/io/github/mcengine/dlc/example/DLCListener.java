@@ -1,4 +1,4 @@
-package io.github.mcengine.dlc.artificialintelligence.example.listener;
+package io.github.mcengine.dlc.example.listener;
 
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;

@@ -1,4 +1,4 @@
-package io.github.mcengine.dlc.artificialintelligence.example.command;
+package io.github.mcengine.dlc.example.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
