@@ -60,6 +60,6 @@ public class ExampleDLC implements IMCEngineDLC {
             logger.warning("Failed to initialize Example-DLC: " + e.getMessage());
             e.printStackTrace();
         }
-        MCEngineApi.checkUpdate(plugin, "github", "MCEngine-DLC", "example", plugin.getConfig().getString("github.token", "null"));
+        MCEngineApi.checkUpdate(plugin, plugin.getLogger(), "[DLC] [Example] ", "github", "MCEngine-DLC", "example", plugin.getConfig().getString("github.token", "null"));
     }
 }
