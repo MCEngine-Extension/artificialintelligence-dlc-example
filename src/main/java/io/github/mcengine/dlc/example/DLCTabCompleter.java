@@ -1,4 +1,4 @@
-package io.github.mcengine.dlc.example.tabcompleter;
+package io.github.mcengine.dlc.example;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
