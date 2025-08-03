@@ -33,7 +33,7 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
      */
     @Override
     public void onLoad(Plugin plugin) {
-        MCEngineExtensionLogger logger = new MCEngineExtensionLogger(plugin, "DLC", "ExampleDLC");
+        MCEngineExtensionLogger logger = new MCEngineExtensionLogger(plugin, "DLC", "ArtificialIntelligenceExampleDLC");
 
         try {
             // Register event listener
@@ -98,7 +98,7 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
 
         // Check for updates
         MCEngineCoreApi.checkUpdate(plugin, logger.getLogger(),
-            "github", "MCEngine-DLC", "example",
+            "github", "MCEngine-Extension", "artificialintelligence-dlc-example",
             plugin.getConfig().getString("github.token", "null"));
     }
 
@@ -109,6 +109,6 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
 
     @Override
     public void setId(String id) {
-        MCEngineCoreApi.setId("example-dlc");
+        MCEngineCoreApi.setId("artificialintelligence-example-dlc");
     }
 }
