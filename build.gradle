@@ -3,15 +3,15 @@ plugins {
     id 'java'
 }
 
+// Set project version using a property, defaulting to 'unspecified' if not found
+version = project.properties[project.name + '.version'] ?: 'undefined'
+group = 'io.github.mcengine'
+
 ext {
     user_git_name = System.getenv('USER_GIT_NAME')
     user_github_token = System.getenv('USER_GITHUB_TOKEN')
     jarName = System.getenv('PROJECT_NAME') ?: 'ExampleDLC'
 }
-
-// Set project version using a property, defaulting to 'unspecified' if not found
-version = project.properties[project.name + '.version'] ?: 'undefined'
-group = 'io.github.mcengine'
 
 ext {
     user_git_name = System.getenv('USER_GIT_NAME')
