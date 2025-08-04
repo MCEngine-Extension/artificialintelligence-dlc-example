@@ -47,6 +47,7 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
 
             // Define the /exampledlc command
             Command exampleDLCCommand = new Command("exampledlc") {
+
                 /**
                  * Handles logic for /exampledlc command.
                  */
@@ -109,6 +110,6 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
 
     @Override
     public void setId(String id) {
-        MCEngineCoreApi.setId("artificialintelligence-example-dlc");
+        MCEngineCoreApi.setId("artificialintelligence-dlc-example");
     }
 }
