@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * Main class for the ExampleDLC.
  * <p>
- * Registers the /exampledlc command and event listeners.
+ * Registers the /aidlcexample command and event listeners.
  */
 public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
 
@@ -45,21 +45,21 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
             commandMapField.setAccessible(true);
             CommandMap commandMap = (CommandMap) commandMapField.get(Bukkit.getServer());
 
-            // Define the /exampledlc command
-            Command exampleDLCCommand = new Command("exampledlc") {
+            // Define the /aidlcexample command
+            Command aiDLCExampleCommand = new Command("aidlcexample") {
 
                 /**
-                 * Handles logic for /exampledlc command.
+                 * Handles logic for /aidlcexample command.
                  */
                 private final DLCCommand handler = new DLCCommand();
 
                 /**
-                 * Provides tab-completion for /exampledlc.
+                 * Provides tab-completion for /aidlcexample.
                  */
                 private final DLCTabCompleter completer = new DLCTabCompleter();
 
                 /**
-                 * Executes the /exampledlc command.
+                 * Executes the /aidlcexample command.
                  *
                  * @param sender The command sender.
                  * @param label  The command label.
@@ -72,7 +72,7 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
                 }
 
                 /**
-                 * Handles tab-completion for the /exampledlc command.
+                 * Handles tab-completion for the /aidlcexample command.
                  *
                  * @param sender The command sender.
                  * @param alias  The alias used.
@@ -85,11 +85,11 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
                 }
             };
 
-            exampleDLCCommand.setDescription("Example DLC command.");
-            exampleDLCCommand.setUsage("/exampledlc");
+            aiDLCExampleCommand.setDescription("AI DLC example command.");
+            aiDLCExampleCommand.setUsage("/aidlcexample");
 
-            // Dynamically register the /exampledlc command
-            commandMap.register(plugin.getName().toLowerCase(), exampleDLCCommand);
+            // Dynamically register the /aidlcexample command
+            commandMap.register(plugin.getName().toLowerCase(), aiDLCExampleCommand);
 
             logger.info("Enabled successfully.");
         } catch (Exception e) {
