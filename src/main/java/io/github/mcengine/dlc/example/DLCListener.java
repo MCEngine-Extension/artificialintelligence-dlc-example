@@ -36,7 +36,7 @@ public class DLCListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        player.sendMessage(ChatColor.AQUA + "[DLC] Hello " + player.getName() + ", enjoy your time!");
+        player.sendMessage(ChatColor.AQUA + "[DLC][artificialintelligence-dlc-example] Hello " + player.getName() + ", enjoy your time!");
     }
 
     /**
@@ -47,6 +47,6 @@ public class DLCListener implements Listener {
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        Bukkit.getLogger().info("[DLC] " + player.getName() + " has left the server.");
+        Bukkit.getLogger().info("[DLC][artificialintelligence-dlc-example] " + player.getName() + " has left the server.");
     }
 }
