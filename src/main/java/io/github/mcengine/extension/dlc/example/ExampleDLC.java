@@ -110,6 +110,6 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
 
     @Override
     public void setId(String id) {
-        MCEngineCoreApi.setId("artificialintelligence-dlc-example");
+        MCEngineCoreApi.setId("mcengine-artificialintelligence-dlc-example");
     }
 }
