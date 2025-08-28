@@ -38,7 +38,7 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
         try {
             // Register event listener
             PluginManager pluginManager = Bukkit.getPluginManager();
-            pluginManager.registerEvents(new DLCListener(plugin), plugin);
+            pluginManager.registerEvents(new DLCListener(plugin, logger), plugin);
 
             // Reflectively access Bukkit's CommandMap
             Field commandMapField = Bukkit.getServer().getClass().getDeclaredField("commandMap");
