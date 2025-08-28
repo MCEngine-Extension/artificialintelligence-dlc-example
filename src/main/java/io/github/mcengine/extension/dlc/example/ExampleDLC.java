@@ -96,11 +96,6 @@ public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
             logger.warning("Failed to initialize ExampleDLC: " + e.getMessage());
             e.printStackTrace();
         }
-
-        // Check for updates
-        MCEngineCoreApi.checkUpdate(plugin, logger.getLogger(),
-            "github", "MCEngine-Extension", "artificialintelligence-dlc-example",
-            plugin.getConfig().getString("github.token", "null"));
     }
 
     @Override
