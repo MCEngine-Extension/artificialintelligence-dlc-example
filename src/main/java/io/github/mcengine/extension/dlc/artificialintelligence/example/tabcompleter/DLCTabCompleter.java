@@ -1,4 +1,4 @@
-package io.github.mcengine.extension.dlc.example;
+package io.github.mcengine.extension.dlc.artificialintelligence.example.tabcompleter;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
