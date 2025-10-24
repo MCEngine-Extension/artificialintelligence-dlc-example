@@ -4,9 +4,9 @@ import io.github.mcengine.api.core.MCEngineCoreApi;
 import io.github.mcengine.api.core.extension.logger.MCEngineExtensionLogger;
 import io.github.mcengine.api.artificialintelligence.extension.dlc.IMCEngineArtificialIntelligenceDLC;
 
-import io.github.mcengine.extension.dlc.artificialintelligence.example.DLCCommand.command;
-import io.github.mcengine.extension.dlc.artificialintelligence.example.DLCListener.listener;
-import io.github.mcengine.extension.dlc.artificialintelligence.example.DLCTabCompleter.tabcompleter;
+import io.github.mcengine.extension.dlc.artificialintelligence.example.command.DLCCommand;
+import io.github.mcengine.extension.dlc.artificialintelligence.example.listener.DLCListener;
+import io.github.mcengine.extension.dlc.artificialintelligence.example.tabcompleter.DLCTabCompleter;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
