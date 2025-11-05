@@ -23,7 +23,7 @@ import java.util.List;
  * <p>
  * Registers the /aidlcexample command and event listeners.
  */
-public class ExampleDLC implements IMCEngineArtificialIntelligenceDLC {
+public class ExampleAIDLC implements IMCEngineArtificialIntelligenceDLC {
 
     /**
      * Initializes the ExampleDLC.
